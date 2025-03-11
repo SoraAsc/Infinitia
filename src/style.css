@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+@theme {
+  --primary: 14 165 233;
+  --secondary: 99 102 241;
+  --accent: 139 92 246;
+
+  --color-primary: rgb(var(--primary));
+  --color-primary-25: rgb(var(--primary) / 0.25);
+  --color-primary-50: rgb(var(--primary) / 0.5);
+  --color-secondary: rgb(var(--secondary));
+  --color-accent: rgb(var(--accent));
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-white;
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+@layer components {
+  /* Layout Components */
+  .card {
+    @apply bg-white dark:bg-slate-800 rounded-2xl shadow-lg shadow-slate-200/50 dark:shadow-slate-900/50 p-6 transition-all duration-300;
+  }
+
+  .canvas-container {
+    @apply border-2 border-slate-200 dark:border-slate-700 rounded-2xl overflow-hidden shadow-inner bg-white dark:bg-slate-800;
+  }
+
+  /* Interactive Elements */
+  .btn {
+    @apply px-4 py-2.5 rounded-xl font-medium transition-all duration-200 flex items-center gap-2 disabled:opacity-50;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary active:bg-primary shadow-lg shadow-primary-25;
+  }
+
+  .btn-secondary {
+    @apply bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700;
+  }
+
+  .nav-link {
+    @apply px-4 py-2 rounded-xl transition-colors duration-200 hover:bg-slate-100 dark:hover:bg-slate-800 
+           text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white
+           min-w-[100px] text-center whitespace-nowrap;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-primary-50 dark:focus:ring-primary-25;
+  }
+
+  /* Indicators */
+  .badge {
+    @apply px-2.5 py-1 rounded-lg text-sm font-medium bg-white text-primary dark:bg-slate-800;
+  }
+  
+
+  .tool-card {
+    @apply cursor-pointer hover:scale-[1.02] transition-all duration-300 relative overflow-hidden;
+  }
+}
