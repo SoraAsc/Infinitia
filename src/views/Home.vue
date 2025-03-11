@@ -1,5 +1,4 @@
 <template>
-
     <main class="container mx-auto px-4">
         <div class="text-center max-w-3xl mx-auto space-y-6">
             <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary dark:bg-primary/20">

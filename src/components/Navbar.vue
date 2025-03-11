@@ -48,8 +48,8 @@ watch(isDark, (value) => {
             class="p-2 rounded-xl cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors duration-200"
             :title="isDark ? $t('app.theme.light') : $t('app.theme.dark')"
           >
-            <v-icon v-if="isDark" name="co-sun" class="w-5 h-5" hover="true" animation="pulse"/>
-            <v-icon v-else name="io-moon-outline" class="w-5 h-5" hover="true" animation="pulse"/>
+            <v-icon v-if="isDark" name="co-sun" class="w-5 h-5" :hover="true" animation="pulse"/>
+            <v-icon v-else name="io-moon-outline" class="w-5 h-5" :hover="true" animation="pulse"/>
           </button>
         </div>
 
