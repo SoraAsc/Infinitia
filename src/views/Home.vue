@@ -21,16 +21,11 @@
           />
         </div>
     </main>
-  <!-- <div class="space-y-6">
-    <h1 class="text-4xl font-bold">{{ $t('nav.home') }}</h1>
-    <DrawingCanvas />
-  </div> -->
+
 </template>
 
-<script setup>
+<script setup lang="ts">
 import ToolCard from '../components/ToolCard.vue';
-
-// import DrawingCanvas from '../components/DrawingCanvas.vue'
 const tools = [
   {
     id: 'digit-recognition',

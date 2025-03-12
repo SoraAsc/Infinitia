@@ -41,6 +41,13 @@
       "title": "Treinamento Personalizado",
       "description": "Treine sua própria IA com seus dados",
       "badge": "Avançado"
-    }
+    },
+    "not-found": "Ferramenta não encontrada",
+    "not-found-description": "A ferramenta que você está procurando não existe ou foi movida."
+  },
+  "error": {
+    "not-found": "Página não encontrada",
+    "not-found-description": "A página que você está procurando não existe ou foi movida.",
+    "back-home": "Voltar ao início"
   }
 } 

@@ -1,5 +1,7 @@
 <script setup lang="ts">
+import { useRouter } from 'vue-router'
 
+const router = useRouter()
 
 defineProps<{
   tool: {
@@ -10,10 +12,17 @@ defineProps<{
     icon: string
   }
 }>()
+
+const navigateToTool = (toolId: string) => {
+  router.push(`/tool/${toolId}`)
+}
 </script>
 
 <template>
-  <div class="card tool-card group">
+  <div 
+    class="card tool-card group cursor-pointer hover:scale-[1.02] transition-all duration-200"
+    @click="navigateToTool(tool.id)"
+  >
     <div class="flex items-start gap-4">
       <div class="p-3 rounded-xl bg-primary/10 text-primary dark:bg-primary/20">
         <v-icon :name="tool.icon" class="w-6 h-6" />
