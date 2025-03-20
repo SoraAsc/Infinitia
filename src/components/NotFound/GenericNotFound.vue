@@ -1,17 +1,30 @@
 <template>
   <div class="min-h-[80vh] flex items-center justify-center">
     <div class="text-center space-y-6">
-      <div class="space-y-2">
-        <h1 class="text-4xl font-bold text-slate-900 dark:text-white">
-          {{ title || $t('error.not-found') }}
-        </h1>
-        <p class="text-lg text-slate-600 dark:text-slate-400">
-          {{ description || $t('error.not-found-description') }}
-        </p>
+      <div class="space-y-4">
+        <h1 class="text-9xl font-bold text-primary">404</h1>
+        <div class="space-y-2">
+          <h2 class="text-2xl font-bold text-slate-900 dark:text-white">
+            {{ title || $t('error.not-found') }}
+          </h2>
+          <p class="text-slate-600 dark:text-slate-300">
+            {{ description || $t('error.not-found-description') }}
+          </p>
+        </div>
       </div>
-      <div>
-        <button @click="goHome" class="btn btn-primary">
-          {{ $t('error.back-home') }}
+      <div class="flex gap-8 justify-center">
+        <button
+          @click="goBack"
+          class="btn btn-secondary cursor-pointer"
+        >
+          <v-icon name="bi-arrow-left" class="w-5 h-5" />
+          <span>{{ $t('error.back') }}</span>
+        </button>
+        <button
+          @click="goHome"
+          class="btn btn-primary cursor-pointer"
+        >
+          <span>{{ $t('error.back-home') }}</span>
         </button>
       </div>
     </div>
@@ -38,6 +51,7 @@ const goHome = () => {
   toggleNavbar(true)
   router.push('/')
 }
+const goBack = () => router.back()
 
 onMounted(() => toggleNavbar(props.showNavbar))
 </script>

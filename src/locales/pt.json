@@ -48,6 +48,7 @@
   "error": {
     "not-found": "Página não encontrada",
     "not-found-description": "A página que você está procurando não existe ou foi movida.",
-    "back-home": "Voltar ao início"
+    "back-home": "Voltar ao início", 
+    "back": "Voltar"
   }
 } 
