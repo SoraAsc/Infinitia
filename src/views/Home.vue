@@ -28,6 +28,13 @@
 import ToolCard from '../components/ToolCard.vue';
 const tools = [
   {
+    id: 'image-processing',
+    title: 'tools.image-processing.title',
+    description: 'tools.image-processing.description',
+    icon: 'bi-card-image',
+    badge: 'tools.image-processing.badge'
+  },
+  {
     id: 'digit-recognition',
     title: 'tools.digit.title',
     description: 'tools.digit.description',

@@ -4,15 +4,17 @@ import { useRoute } from 'vue-router'
 import { useNavbar } from '../composables/useNavbar'
 // import ImageClassification from '../components/ImageClassification.vue'
 // import CustomTraining from '../components/CustomTraining.vue'
-import DigitRecognition from '../views/Tools/DigitRecognition.vue'
+// import DigitRecognition from '../views/Tools/DigitRecognition.vue'
 import GenericNotFound from '../components/NotFound/GenericNotFound.vue'
+import ImageProcessing from './Tools/ImageProcessing.vue'
 
 const route = useRoute()
 const { toggleNavbar } = useNavbar()
 const toolId = computed(() => route.params.id)
 
 const toolComponents = {
-  'digit-recognition': DigitRecognition,
+  'image-processing': ImageProcessing,
+  // 'digit-recognition': DigitRecognition,
   // 'image-classification': ImageClassification,
   // 'custom-training': CustomTraining
 }

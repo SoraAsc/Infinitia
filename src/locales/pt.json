@@ -27,6 +27,11 @@
     "description": "Explore nossa coleção de ferramentas de IA para potencializar sua criatividade e produtividade"
   },
   "tools": {
+    "image-processing": {
+      "title": "Processamento de Imagens",
+      "description": "Aplique filtros e efeitos às suas imagens",
+      "badge": "Novo"
+    },
     "digit": {
       "title": "Reconhecimento de Dígitos",
       "description": "Desenhe números e veja a IA reconhecer em tempo real",

@@ -27,6 +27,11 @@
     "description": "Explore our collection of AI tools to enhance your creativity and productivity"
   },
   "tools": {
+    "image-processing": {
+      "title": "Image Processing",
+      "description": "Apply filters and effects to your images",
+      "badge": "New"
+    },
     "digit": {
       "title": "Digit Recognition",
       "description": "Draw numbers and watch AI recognize them in real-time",
