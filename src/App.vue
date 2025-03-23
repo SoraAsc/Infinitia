@@ -6,7 +6,7 @@ const { showNavbar } = useNavbar()
 </script>
 
 <template>
-  <div class="min-h-screen min-w-[320px] bg-slate-50 dark:bg-slate-900">
+  <div class="min-h-screen min-w-[400px] bg-slate-50 dark:bg-slate-900">
     <Navbar v-if="showNavbar" />
     <main class="container mx-auto px-4 py-8 md:py-12">
       <router-view v-slot="{ Component }">

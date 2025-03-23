@@ -26,7 +26,7 @@ onMounted(() => toggleNavbar(true))
 
 <template>
   <div class="space-y-8">
-    <div class="card" v-if="currentComponent">
+    <div class="max-w-5xl mx-auto" v-if="currentComponent">
       <component :is="currentComponent" />
     </div>
     

@@ -24,7 +24,7 @@ watch(isDark, (value) => {
             {{ $t('app.title') }}
           </router-link>
           <!-- Desktop Navigation -->
-          <div class="hidden md:flex items-center gap-4">
+          <div class="hidden lg:flex items-center gap-2">
             <router-link to="/" class="nav-link">{{$t('nav.home')}}</router-link>
             <router-link to="/documentation" class="nav-link">{{$t('nav.documentation')}}</router-link>
             <router-link to="/examples" class="nav-link">{{$t('nav.examples')}}</router-link>
@@ -32,7 +32,7 @@ watch(isDark, (value) => {
         </div>
 
         <!-- Desktop Actions -->
-        <div class="hidden md:flex items-center gap-4">
+        <div class="hidden lg:flex items-center gap-4">
           <LanguageSelector />
           <a
             href="https://github.com"
@@ -54,14 +54,14 @@ watch(isDark, (value) => {
         </div>
 
         <!-- Mobile Menu Button -->
-        <div class="md:hidden flex items-center">
+        <div class="lg:hidden flex items-center">
           <button
             @click="toggleMenu()"
             class="p-2 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-700"
           >
             <v-icon
               :name="isMenuOpen ? 'md-close' : 'fc-menu'"
-              class="w-6 h-6"
+              class="w-6 h-6 cursor-pointer"
             />
           </button>
         </div>
@@ -71,7 +71,7 @@ watch(isDark, (value) => {
     <!-- Mobile Menu -->
     <div
       v-show="isMenuOpen"
-      class="md:hidden border-t border-slate-200 dark:border-slate-700"
+      class="lg:hidden border-t border-slate-200 dark:border-slate-700"
     >
       <div class="container mx-auto px-4 py-4 space-y-4">
         <router-link to="/" class="nav-link block" @click="isMenuOpen = false">{{$t('nav.home')}}</router-link>

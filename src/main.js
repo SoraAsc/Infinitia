@@ -6,9 +6,21 @@ import { router } from './router'
 
 import { OhVueIcon, addIcons } from "oh-vue-icons";
 
-import { IoMoonOutline, CoSun, RiGithubLine, FcMenu, MdClose, FaBrain, BiPencil, BiCardImage, BiArrowLeft } from "oh-vue-icons/icons";
+import 
+{ 
+    IoMoonOutline, CoSun, RiGithubLine, FcMenu, MdClose, 
+    FaBrain, BiPencil, BiCardImage, BiArrowLeft, BiUpload, 
+    BiDownload, BiArrowCounterclockwise, BiArrowRepeat,
+    IoColorWand, BiYinYang
+} from "oh-vue-icons/icons";
 
-addIcons(IoMoonOutline, CoSun, RiGithubLine, FcMenu, MdClose, FaBrain, BiPencil, BiCardImage, BiArrowLeft);
+addIcons
+(
+    IoMoonOutline, CoSun, RiGithubLine, FcMenu, MdClose, 
+    FaBrain, BiPencil, BiCardImage, BiArrowLeft, BiUpload, 
+    BiDownload, BiArrowCounterclockwise, BiArrowRepeat,
+    IoColorWand, BiYinYang
+);
 
 const app = createApp(App)
 app.component('v-icon', OhVueIcon)

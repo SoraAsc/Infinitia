@@ -26,11 +26,22 @@
     "highlight": "Artificial Intelligence",
     "description": "Explore our collection of AI tools to enhance your creativity and productivity"
   },
+  "file": {
+    "download": "Download Image",
+    "undo": "Undo",
+    "redo": "Redo",
+    "supported-formats": "Supports JPG and PNG up to 5MB",
+    "upload-file": "Click to upload"
+  },
   "tools": {
     "image-processing": {
       "title": "Image Processing",
       "description": "Apply filters and effects to your images",
-      "badge": "New"
+      "badge": "New",
+      "filters": {
+        "normal": "Normal",
+        "b-w": "B&W"
+      }
     },
     "digit": {
       "title": "Digit Recognition",

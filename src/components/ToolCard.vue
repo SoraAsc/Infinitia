@@ -23,9 +23,9 @@ const navigateToTool = (toolId: string) => {
     class="card tool-card group cursor-pointer hover:scale-[1.02] transition-all duration-200"
     @click="navigateToTool(tool.id)"
   >
-    <div class="flex items-start gap-4">
+    <div class="flex items-center gap-4 min-h-24">
       <div class="p-3 rounded-xl bg-primary/10 text-primary dark:bg-primary/20">
-        <v-icon :name="tool.icon" class="w-6 h-6" />
+        <v-icon :name="tool.icon" class="w-6 h-6 " />
       </div>
       <div class="flex-1 min-w-0">
         <div class="flex items-center gap-2">

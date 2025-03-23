@@ -26,11 +26,22 @@
     "highlight": "Inteligência Artificial",
     "description": "Explore nossa coleção de ferramentas de IA para potencializar sua criatividade e produtividade"
   },
+  "file": {
+    "download": "Baixar Imagem",
+    "undo": "Desfazer",
+    "redo": "Refazer",
+    "supported-formats": "Suporta JPG e PNG até 5MB",
+    "upload-file": "Clique para fazer upload"
+  },
   "tools": {
     "image-processing": {
       "title": "Processamento de Imagens",
       "description": "Aplique filtros e efeitos às suas imagens",
-      "badge": "Novo"
+      "badge": "Novo",
+      "filters": {
+        "normal": "Normal",
+        "b-w": "P&B" 
+      }
     },
     "digit": {
       "title": "Reconhecimento de Dígitos",
