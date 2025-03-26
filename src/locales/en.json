@@ -1,70 +1,72 @@
 {
-  "app": {
-    "title": "Infinitia",
-    "theme": {
-      "light": "Light Theme",
-      "dark": "Dark Theme"
+    "app": {
+        "title": "Infinitia",
+        "theme": {
+            "light": "Light Theme",
+            "dark": "Dark Theme"
+        },
+        "beta": "Beta",
+        "platform": "AI Platform"
     },
-    "beta": "Beta",
-    "platform": "AI Platform"
-  },
-  "canvas": {
-    "clear": "Clear Canvas",
-    "predict": "Predict Drawing",
+    "canvas": {
+        "clear": "Clear Canvas",
+        "predict": "Predict Drawing",
+        "tools": {
+            "brush": "Brush",
+            "eraser": "Eraser"
+        }
+    },
+    "nav": {
+        "home": "Home",
+        "documentation": "Documentation",
+        "examples": "Examples"
+    },
+    "home": {
+        "title": "Experience the power of",
+        "highlight": "Artificial Intelligence",
+        "description": "Explore our collection of AI tools to enhance your creativity and productivity"
+    },
+    "file": {
+        "download": "Download Image",
+        "undo": "Undo",
+        "redo": "Redo",
+        "supported-formats": "Supports JPG and PNG up to 5MB",
+        "upload-file": "Click to upload"
+    },
     "tools": {
-      "brush": "Brush",
-      "eraser": "Eraser"
+        "image-processing": {
+            "title": "Image Processing",
+            "description": "Apply filters and effects to your images",
+            "badge": "New",
+            "filters": {
+                "normal": "Normal",
+                "gray": "Gray",
+                "b-w": "B&W",
+                "otsu": "Otsu"
+            }
+        },
+        "digit": {
+            "title": "Digit Recognition",
+            "description": "Draw numbers and watch AI recognize them in real-time",
+            "badge": "New"
+        },
+        "image": {
+            "title": "Image Classification",
+            "description": "Upload images for AI classification",
+            "badge": "New"
+        },
+        "training": {
+            "title": "Custom Training",
+            "description": "Train your own AI with your data",
+            "badge": "Advanced"
+        },
+        "not-found": "Tool not found",
+        "not-found-description": "The tool you are looking for does not exist or has been moved."
+    },
+    "error": {
+        "not-found": "Page not found",
+        "not-found-description": "The page you are looking for does not exist or has been moved.",
+        "back-home": "Back to home",
+        "back": "Back"
     }
-  },
-  "nav": {
-    "home": "Home",
-    "documentation": "Documentation",
-    "examples": "Examples"
-  },
-  "home": {
-    "title": "Experience the power of",
-    "highlight": "Artificial Intelligence",
-    "description": "Explore our collection of AI tools to enhance your creativity and productivity"
-  },
-  "file": {
-    "download": "Download Image",
-    "undo": "Undo",
-    "redo": "Redo",
-    "supported-formats": "Supports JPG and PNG up to 5MB",
-    "upload-file": "Click to upload"
-  },
-  "tools": {
-    "image-processing": {
-      "title": "Image Processing",
-      "description": "Apply filters and effects to your images",
-      "badge": "New",
-      "filters": {
-        "normal": "Normal",
-        "b-w": "B&W"
-      }
-    },
-    "digit": {
-      "title": "Digit Recognition",
-      "description": "Draw numbers and watch AI recognize them in real-time",
-      "badge": "New"
-    },
-    "image": {
-      "title": "Image Classification",
-      "description": "Upload images for AI classification",
-      "badge": "New"
-    },
-    "training": {
-      "title": "Custom Training",
-      "description": "Train your own AI with your data",
-      "badge": "Advanced"
-    },
-    "not-found": "Tool not found",
-    "not-found-description": "The tool you are looking for does not exist or has been moved."
-  },
-  "error": {
-    "not-found": "Page not found",
-    "not-found-description": "The page you are looking for does not exist or has been moved.",
-    "back-home": "Back to home",
-    "back": "Back"
-  }
-} 
+}

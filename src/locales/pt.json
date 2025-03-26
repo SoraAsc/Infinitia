@@ -1,70 +1,72 @@
 {
-  "app": {
-    "title": "Infinitia",
-    "theme": {
-      "light": "Tema Claro",
-      "dark": "Tema Escuro"
+    "app": {
+        "title": "Infinitia",
+        "theme": {
+            "light": "Tema Claro",
+            "dark": "Tema Escuro"
+        },
+        "beta": "Beta",
+        "platform": "Plataforma IA"
     },
-    "beta": "Beta",
-    "platform": "Plataforma IA"
-  },
-  "canvas": {
-    "clear": "Limpar Canvas",
-    "predict": "Prever Desenho",
+    "canvas": {
+        "clear": "Limpar Canvas",
+        "predict": "Prever Desenho",
+        "tools": {
+            "brush": "Pincel",
+            "eraser": "Borracha"
+        }
+    },
+    "nav": {
+        "home": "Início",
+        "documentation": "Documentação",
+        "examples": "Exemplos"
+    },
+    "home": {
+        "title": "Experimente o poder da",
+        "highlight": "Inteligência Artificial",
+        "description": "Explore nossa coleção de ferramentas de IA para potencializar sua criatividade e produtividade"
+    },
+    "file": {
+        "download": "Baixar Imagem",
+        "undo": "Desfazer",
+        "redo": "Refazer",
+        "supported-formats": "Suporta JPG e PNG até 5MB",
+        "upload-file": "Clique para fazer upload"
+    },
     "tools": {
-      "brush": "Pincel",
-      "eraser": "Borracha"
+        "image-processing": {
+            "title": "Processamento de Imagens",
+            "description": "Aplique filtros e efeitos às suas imagens",
+            "badge": "Novo",
+            "filters": {
+                "normal": "Normal",
+                "gray": "Cinza",
+                "b-w": "P&B",
+                "otsu": "Otsu"
+            }
+        },
+        "digit": {
+            "title": "Reconhecimento de Dígitos",
+            "description": "Desenhe números e veja a IA reconhecer em tempo real",
+            "badge": "Novo"
+        },
+        "image": {
+            "title": "Classificação de Imagens",
+            "description": "Upload de imagens para classificação com IA",
+            "badge": "Novo"
+        },
+        "training": {
+            "title": "Treinamento Personalizado",
+            "description": "Treine sua própria IA com seus dados",
+            "badge": "Avançado"
+        },
+        "not-found": "Ferramenta não encontrada",
+        "not-found-description": "A ferramenta que você está procurando não existe ou foi movida."
+    },
+    "error": {
+        "not-found": "Página não encontrada",
+        "not-found-description": "A página que você está procurando não existe ou foi movida.",
+        "back-home": "Voltar ao início",
+        "back": "Voltar"
     }
-  },
-  "nav": {
-    "home": "Início",
-    "documentation": "Documentação",
-    "examples": "Exemplos"
-  },
-  "home": {
-    "title": "Experimente o poder da",
-    "highlight": "Inteligência Artificial",
-    "description": "Explore nossa coleção de ferramentas de IA para potencializar sua criatividade e produtividade"
-  },
-  "file": {
-    "download": "Baixar Imagem",
-    "undo": "Desfazer",
-    "redo": "Refazer",
-    "supported-formats": "Suporta JPG e PNG até 5MB",
-    "upload-file": "Clique para fazer upload"
-  },
-  "tools": {
-    "image-processing": {
-      "title": "Processamento de Imagens",
-      "description": "Aplique filtros e efeitos às suas imagens",
-      "badge": "Novo",
-      "filters": {
-        "normal": "Normal",
-        "b-w": "P&B" 
-      }
-    },
-    "digit": {
-      "title": "Reconhecimento de Dígitos",
-      "description": "Desenhe números e veja a IA reconhecer em tempo real",
-      "badge": "Novo"
-    },
-    "image": {
-      "title": "Classificação de Imagens",
-      "description": "Upload de imagens para classificação com IA",
-      "badge": "Novo"
-    },
-    "training": {
-      "title": "Treinamento Personalizado",
-      "description": "Treine sua própria IA com seus dados",
-      "badge": "Avançado"
-    },
-    "not-found": "Ferramenta não encontrada",
-    "not-found-description": "A ferramenta que você está procurando não existe ou foi movida."
-  },
-  "error": {
-    "not-found": "Página não encontrada",
-    "not-found-description": "A página que você está procurando não existe ou foi movida.",
-    "back-home": "Voltar ao início", 
-    "back": "Voltar"
-  }
-} 
+}
