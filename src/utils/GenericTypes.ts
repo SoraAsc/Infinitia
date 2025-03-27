@@ -1,0 +1,1 @@
+export type ImageFilter = (imageData: ImageData, ...args: any[]) => ImageData;

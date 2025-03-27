@@ -6,18 +6,18 @@ Infinitia is a project that provides tools for image processing and neural netwo
 
 ### Image Processing Tool
 
--   Title: Image Processing
+-   **Title:** Image Processing
 
--   Description: Apply filters and effects to your images with precision.
+-   **Description:** Apply filters and effects to your images. (Note: These algorithms are custom implementations, not the most optimized in terms of performance like those in OpenCV.)
 
--   Badge: 🆕 New (indicating recently added features)
+-   **Badge:** 🆕 New (indicating recently added features)
 
--   Available Filters:
+-   **Available Filters:**
 
-    -   Normal: Restores the image to its original state.
+    -   **Normal:** Restores the image to its original state.
 
-    -   Black & White (B&W): Converts the image to black and white using a fixed threshold.
+    -   **Gray:** Converts the image to shades of gray.
 
-    -   Otsu: Applies automatic thresholding for optimal binarization.
+    -   **Black & White (B&W):** Converts the image to black and white using a fixed threshold.
 
-    -   Gray: Converts the image to shades of gray.
+    -   **Otsu:** Applies automatic thresholding for optimal binarization.

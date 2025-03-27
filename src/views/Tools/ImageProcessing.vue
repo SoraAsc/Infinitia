@@ -43,7 +43,7 @@
       <div class="card md:w-[70%] w-[100%]" v-if="currentFile">
         <h3 class="text-lg font-semibold text-slate-900 dark:text-white mb-4 flex items-center gap-2">
           <v-icon name="io-color-wand" class="w-5 h-5" />
-          <span>Filtros</span>
+          <span>{{ $t('tools.image-processing.filter') }}</span>
         </h3>
         <div class="grid grid-cols-2 gap-2">
           <button v-for="filter in filters" :key="filter.name" @click="applyFilter(filter.filter as FilterType)" class="flex flex-col items-center p-5 cursor-pointer rounded-lg transition-all duration-200 hover:bg-slate-200 dark:hover:bg-slate-700">
@@ -78,9 +78,19 @@ const filters = [
     filter: 'normal',
   },
   {
+    name: 'tools.image-processing.filters.gray',
+    icon: 'bi-yin-yang',
+    filter: 'gray',
+  },
+  {
     name: 'tools.image-processing.filters.b-w',
     icon: 'bi-yin-yang',
     filter: 'black-and-white',
+  },
+  {
+    name: 'tools.image-processing.filters.otsu',
+    icon: 'bi-yin-yang',
+    filter: 'otsu',
   }
 ]
 

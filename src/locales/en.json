@@ -38,6 +38,7 @@
             "title": "Image Processing",
             "description": "Apply filters and effects to your images",
             "badge": "New",
+            "filter": "Filters",
             "filters": {
                 "normal": "Normal",
                 "gray": "Gray",
