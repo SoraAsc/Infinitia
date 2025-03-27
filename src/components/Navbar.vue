@@ -35,7 +35,7 @@ watch(isDark, (value) => {
         <div class="hidden lg:flex items-center gap-4">
           <LanguageSelector />
           <a
-            href="https://github.com"
+            href="https://github.com/SoraAsc"
             target="_blank"
             class="btn btn-secondary"
           >
