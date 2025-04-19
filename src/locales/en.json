@@ -6,7 +6,7 @@
             "dark": "Dark Theme"
         },
         "beta": "Beta",
-        "platform": "AI Platform"
+        "platform": "Image Proccessing Tools Platform"
     },
     "canvas": {
         "clear": "Clear Canvas",
@@ -23,8 +23,8 @@
     },
     "home": {
         "title": "Experience the power of",
-        "highlight": "Artificial Intelligence",
-        "description": "Explore our collection of AI tools to enhance your creativity and productivity"
+        "highlight": "Proccessing Image Tools",
+        "description": "Explore our collection of image processing and creative tools designed to boost your productivity"
     },
     "file": {
         "download": "Download Image",
@@ -43,7 +43,8 @@
                 "normal": "Normal",
                 "gray": "Gray",
                 "b-w": "B&W",
-                "otsu": "Otsu"
+                "otsu": "Otsu",
+                "fourier": "Fourier"
             }
         },
         "digit": {

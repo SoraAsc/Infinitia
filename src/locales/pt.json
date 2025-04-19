@@ -6,7 +6,7 @@
             "dark": "Tema Escuro"
         },
         "beta": "Beta",
-        "platform": "Plataforma IA"
+        "platform": "Plataforma de Ferramentas de Processamento de Imagem"
     },
     "canvas": {
         "clear": "Limpar Canvas",
@@ -22,9 +22,9 @@
         "examples": "Exemplos"
     },
     "home": {
-        "title": "Experimente o poder da",
-        "highlight": "Inteligência Artificial",
-        "description": "Explore nossa coleção de ferramentas de IA para potencializar sua criatividade e produtividade"
+        "title": "Experimente o poder das",
+        "highlight": "Ferramentas de Processamento de Imagem",
+        "description": "Explore nossa coleção de ferramentas para processamento de imagem e criatividade, feitas para aumentar sua produtividade"
     },
     "file": {
         "download": "Baixar Imagem",
@@ -43,7 +43,8 @@
                 "normal": "Normal",
                 "gray": "Cinza",
                 "b-w": "P&B",
-                "otsu": "Otsu"
+                "otsu": "Otsu",
+                "fourier": "Fourier"
             }
         },
         "digit": {
