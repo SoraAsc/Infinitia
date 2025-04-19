@@ -24,7 +24,7 @@ export const otsuFilter: ImageFilter = (imageData: ImageData) => {
             bestT = t
         }
     }
-    // console.log(bestT) // threshold
+    console.log("Limiar: " + bestT) // threshold
 
     blackAndWhiteFilter(imageData, bestT)
 

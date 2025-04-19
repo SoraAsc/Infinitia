@@ -33,26 +33,26 @@ const tools = [
     icon: 'bi-card-image',
     badge: 'tools.image-processing.badge'
   },
-  {
-    id: 'digit-recognition',
-    title: 'tools.digit.title',
-    description: 'tools.digit.description',
-    icon: 'bi-pencil',
-    badge: 'tools.digit.badge'
-  },
-  {
-    id: 'image-classification',
-    title: 'tools.image.title',
-    description: 'tools.image.description',
-    icon: 'bi-card-image',
-    badge: 'tools.image.badge'
-  },
-  {
-    id: 'custom-training',
-    title: 'tools.training.title',
-    description: 'tools.training.description',
-    icon: 'fa-brain',
-    badge: 'tools.training.badge'
-  }
+  // {
+  //   id: 'digit-recognition',
+  //   title: 'tools.digit.title',
+  //   description: 'tools.digit.description',
+  //   icon: 'bi-pencil',
+  //   badge: 'tools.digit.badge'
+  // },
+  // {
+  //   id: 'image-classification',
+  //   title: 'tools.image.title',
+  //   description: 'tools.image.description',
+  //   icon: 'bi-card-image',
+  //   badge: 'tools.image.badge'
+  // },
+  // {
+  //   id: 'custom-training',
+  //   title: 'tools.training.title',
+  //   description: 'tools.training.description',
+  //   icon: 'fa-brain',
+  //   badge: 'tools.training.badge'
+  // }
 ]
 </script> 

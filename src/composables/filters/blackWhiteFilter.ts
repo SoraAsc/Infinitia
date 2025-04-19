@@ -6,8 +6,7 @@ export const blackAndWhiteFilter: ImageFilter = (imageData: ImageData, threshold
     for (let i = 0; i < data.length; i += 4) {
         const avg = (data[i] + data[i + 1] + data[i + 2]) / 3;
         let colorIntensity = 255;
-        if(avg >= threshold) colorIntensity = 255;
-        else colorIntensity = 0;
+        if(avg < threshold) colorIntensity = 0;
         data[i] = colorIntensity; // R
         data[i + 1] = colorIntensity; // G
         data[i + 2] = colorIntensity; // B
