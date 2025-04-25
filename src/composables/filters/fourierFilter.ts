@@ -1,5 +1,5 @@
 import { ImageFilter } from "../../utils/GenericTypes";
-import { nextPow2 } from "../../utils/mathUtils";
+import { nextPow2 } from "../../utils/MathUtils";
 import { grayFilter } from "./grayFilter";
 
 function fft1D(real: number[], imag: number[]): void {
