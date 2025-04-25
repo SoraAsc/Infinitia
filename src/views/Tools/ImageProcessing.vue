@@ -92,11 +92,11 @@ const filters = [
     icon: 'bi-yin-yang',
     filter: 'otsu',
   },
-  // {
-  //   name: 'tools.image-processing.filters.fourier',
-  //   icon: 'bi-yin-yang',
-  //   filter: 'fourier',
-  // },
+  {
+    name: 'tools.image-processing.filters.fourier',
+    icon: 'bi-yin-yang',
+    filter: 'fourier',
+  },
 ]
 
 // const adjustments = [
