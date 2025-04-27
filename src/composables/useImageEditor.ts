@@ -1,5 +1,7 @@
 import { computed, ref } from "vue";
 import { filters, FilterType } from './imageFilters';
+import { FilterParamMeta, useFilterParams } from "./useFilterParams";
+import { FourierOptions } from "../utils/GenericTypes";
 
 export function useImageEditor() {
     const currentFile = ref<File | null>(null)
@@ -13,6 +15,8 @@ export function useImageEditor() {
     
     const canvas = document.createElement('canvas')
     const ctx = canvas.getContext('2d', { willReadFrequently: true })
+
+    const options = handleFilterParams();
 
     const updateCurrentImageUrl = () => currentImageUrl.value = canvas.toDataURL()
 
@@ -50,7 +54,7 @@ export function useImageEditor() {
         const filter = filters[filterType];
         if (filter) {
             const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-            const processedImageData = filter(imageData, history.value[0]);
+            const processedImageData = filter(imageData, history.value[0], options);
             ctx.putImageData(processedImageData, 0, 0);
             updateCurrentImageUrl();
 
@@ -112,4 +116,35 @@ export function useImageEditor() {
         applyFilter,
         download,
     }
+}
+
+function handleFilterParams() {
+    const fourierMeta: Record<keyof FourierOptions, FilterParamMeta<any>> = {
+        mode: { options: ["spectrum", "lowpass", "highpass", "bandpass", "bandstop", "softgauss", "glitch"] },
+        gamma: { range: { min: 0, max: 10 } },
+        applyInverse: { options: [true, false] },
+        recolorizeMethod: { options: ['none', 'black', 'color'] },
+        cutoffLow: { range: { min: 0, max: 1 } },
+        cutoffHigh: { range: { min: 0, max: 1 } },
+    }
+    
+    const fourier = useFilterParams<FourierOptions>('fourier', {
+        mode: "lowpass",
+        gamma: 3.0,
+        applyInverse: false,
+        recolorizeMethod: "none",
+        cutoffLow: 0.1,
+        cutoffHigh: 0.2,
+    }, fourierMeta)
+
+    // watch(fourier, (newVal) => {
+    //     // ex: feedback no console
+    //     const validModes: FourierOptions['mode'][] = ['lowpass','highpass','bandpass','bandstop']
+    //     if (!validModes.includes(newVal.mode)) {
+    //         console.warn(`[fourier] modo inválido "${newVal.mode}", resetando pra default`)
+    //         fourier.mode = 'lowpass'
+    //     }
+    // }, { deep: true })
+
+    return {fourier}
 }

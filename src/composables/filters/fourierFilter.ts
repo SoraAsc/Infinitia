@@ -124,16 +124,16 @@ function ifft2D(real: number[][], imag: number[][]): void {
 export const fourierFilter: ImageFilter = (
     imageData: ImageData,
     originalImageData: ImageData,
-    opts: Partial<FourierOptions> = {}
+    opts: {fourier: Partial<FourierOptions>}
   ) => {
     const o = {
         mode: "lowpass" as FourierMode,
         cutoffLow: 0.1,
         cutoffHigh: 0.2,
         gamma: 3.0,
-        applyInverse: true,     // por padrão só mostra espectro
+        applyInverse: false,     // por padrão só mostra espectro
         recolorizeMethod: "none" as RecolorizeMethod,
-        ...opts
+        ...opts.fourier
     };
   
     const { width: W, height: H } = imageData;

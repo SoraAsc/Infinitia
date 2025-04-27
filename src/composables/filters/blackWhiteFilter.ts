@@ -2,7 +2,8 @@ import { ImageFilter } from "../../utils/GenericTypes";
 
 export const blackAndWhiteFilter: ImageFilter = (
     imageData: ImageData, 
-    _,
+    _originalImage,
+    _filtersOptions,
     threshold: number = 127
 ) => {
     const data = imageData.data;
