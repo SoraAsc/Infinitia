@@ -11,7 +11,7 @@ import
     IoMoonOutline, CoSun, RiGithubLine, FcMenu, MdClose, 
     FaBrain, BiPencil, BiCardImage, BiArrowLeft, BiUpload, 
     BiDownload, BiArrowCounterclockwise, BiArrowRepeat,
-    IoColorWand, BiYinYang
+    IoColorWand, BiYinYang, IoContrast, BiSliders, MdWaves, BiPalette
 } from "oh-vue-icons/icons";
 
 addIcons
@@ -19,7 +19,7 @@ addIcons
     IoMoonOutline, CoSun, RiGithubLine, FcMenu, MdClose, 
     FaBrain, BiPencil, BiCardImage, BiArrowLeft, BiUpload, 
     BiDownload, BiArrowCounterclockwise, BiArrowRepeat,
-    IoColorWand, BiYinYang
+    IoColorWand, BiYinYang, IoContrast, BiSliders, MdWaves, BiPalette
 );
 
 const app = createApp(App)

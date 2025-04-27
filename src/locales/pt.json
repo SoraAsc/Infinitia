@@ -44,7 +44,8 @@
                 "gray": "Cinza",
                 "b-w": "P&B",
                 "otsu": "Otsu",
-                "fourier": "Fourier"
+                "fourier": "Fourier",
+                "returnColor": "Restaurar"
             }
         },
         "digit": {

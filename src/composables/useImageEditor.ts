@@ -50,7 +50,7 @@ export function useImageEditor() {
         const filter = filters[filterType];
         if (filter) {
             const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-            const processedImageData = filter(imageData);
+            const processedImageData = filter(imageData, history.value[0]);
             ctx.putImageData(processedImageData, 0, 0);
             updateCurrentImageUrl();
 

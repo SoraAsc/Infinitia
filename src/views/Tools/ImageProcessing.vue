@@ -79,7 +79,7 @@ const filters = [
   },
   {
     name: 'tools.image-processing.filters.gray',
-    icon: 'bi-yin-yang',
+    icon: 'io-contrast',
     filter: 'gray',
   },
   {
@@ -89,13 +89,18 @@ const filters = [
   },
   {
     name: 'tools.image-processing.filters.otsu',
-    icon: 'bi-yin-yang',
+    icon: 'bi-sliders',
     filter: 'otsu',
   },
   {
     name: 'tools.image-processing.filters.fourier',
-    icon: 'bi-yin-yang',
+    icon: 'md-waves',
     filter: 'fourier',
+  },
+  {
+    name: 'tools.image-processing.filters.returnColor',
+    icon: 'bi-palette',
+    filter: 'returnColor',
   },
 ]
 
