@@ -45,7 +45,7 @@
           <v-icon name="io-color-wand" class="w-5 h-5" />
           <span>{{ $t('tools.image-processing.filter') }}</span>
         </h3>
-        <div class="grid grid-cols-2 gap-2">
+        <div class="grid grid-cols-3 gap-2">
           <button v-for="filter in filters" :key="filter.name" @click="applyFilter(filter.filter as FilterType)" class="flex flex-col items-center p-5 cursor-pointer rounded-lg transition-all duration-200 hover:bg-slate-200 dark:hover:bg-slate-700">
             <v-icon :name="filter.icon" class="w-5 h-5" />
             <span>{{ $t(filter.name) }}</span>

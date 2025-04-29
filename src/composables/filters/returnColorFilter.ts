@@ -3,6 +3,7 @@ import { ImageFilter } from "../../utils/GenericTypes";
 export const returnColorFilter: ImageFilter = (
     imageData: ImageData, 
     originalImageData: ImageData,
+    _,
     eps: number = 1e-5 // para evitar divisão por zero
 ) => {
     const data = imageData.data;
